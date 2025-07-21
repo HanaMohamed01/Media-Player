@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mobile Media Player</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="player-container">
+       <div class="album-art"><img src="12-35-32-759_200x200.jpg" width="330px" height="290px" style="box-shadow: #ffffff 4px 4px 15px , #7c57a0 -4px -4px 20px ; border-radius: 10px; border: white solid 1px;" alt=""></div>
+       <div class="track-info">
+           <div class="track-title">Music</div>
+       </div>
+
+       <div class="main-audio">
+           <div class="audio-controls">
+       <div class="top-controls">
+           <button class="control-icon" id="volumeBtn">🔉</button>
+           <button class="control-icon" id="repeatBtn"> ⇋</button>
+           <button class="control-icon" id="shuffleBtn">⇏</button>
+           <button class="control-icon" id="moreBtn">⋯</button>
+       </div>
+       <div class="progress-section">
+           <div class="progress-container" id="progressContainer">
+               <div class="progress-bar" id="progressBar">
+                   <div class="progress-thumb" id="progressThumb"></div>
+               </div>
+           </div>
+           <div class="time-display">
+               <span id="currentTime">0:00</span>
+               <span id="totalTime">3:32</span>
+           </div>
+       </div>
+       <div class="main-controls">
+           <button class="skip-btn" id="prevBtn">⏮</button>
+           <button class="play-pause-btn" id="playPauseBtn">⏸</button>
+           <button class="skip-btn" id="nextBtn">⏭</button>
+       </div>
+       <audio class="audio-element" id="audioPlayer" controls>
+           <source id="audioSource" src="music.mp3" type="audio/mp3">
+       </audio>
+   </div>
+       </div>
+           </div>
+       </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
